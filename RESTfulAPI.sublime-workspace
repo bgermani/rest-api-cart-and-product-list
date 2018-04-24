@@ -3,15 +3,27 @@
 	{
 		"selected_items":
 		[
+			[
+				"u",
+				"UNVERIFIED_USER〔constant〕"
+			],
+			[
+				"order",
+				"$order_detailsQuantity〔variable〕"
+			],
+			[
+				"Order",
+				"Order_Detail〔namespace〕"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/C/Users/bgermani/Desktop/MovieRepository.php",
+			"file": "app/Http/Controllers/Product/ProductController.php",
 			"settings":
 			{
-				"buffer_size": 431,
+				"buffer_size": 2545,
 				"line_ending": "Unix"
 			}
 		}
@@ -55,15 +67,43 @@
 	"expanded_folders":
 	[
 		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI",
-		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/resources",
-		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/resources/assets",
-		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/resources/lang",
-		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/resources/lang/en"
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Console",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Exceptions",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Http",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Http/Controllers",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Http/Controllers/Auth",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Http/Controllers/Order",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Http/Controllers/Order_Detail",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Http/Controllers/Product",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Http/Controllers/User",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/routes"
 	],
 	"file_history":
 	[
-		"/C/Users/bgermani/Desktop/ENDPOINTS.txt",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Http/Controllers/User/UserController.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Http/Controllers/Product/ProductController.php",
 		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/User.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/database/seeds/DatabaseSeeder.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/database/factories/Order_DetailFactory.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/database/factories/OrderFactory.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/database/factories/ProductFactory.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Product.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/database/migrations/2018_04_23_084848_create_order__details_table.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/database/migrations/2018_04_23_084743_create_orders_table.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/database/migrations/2018_04_23_084654_create_products_table.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/routes/api.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Order_Detail.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Order.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Providers/AppServiceProvider.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/database/factories/UserFactory.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/.env",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/app/Providers/RouteServiceProvider.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/routes/web.php",
+		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/C/Users/bgermani/Desktop/MovieRepository.php",
+		"/C/Users/bgermani/Desktop/ENDPOINTS.txt",
 		"/C/Users/bgermani/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
 		"/C/Users/bgermani/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
 		"/C/Users/bgermani/Documents/GitHub/RESTfulAPI/vendor/laravel/framework/src/Illuminate/Notifications/Notifiable.php",
@@ -112,11 +152,11 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/bgermani/Desktop/MovieRepository.php",
+					"file": "app/Http/Controllers/Product/ProductController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 431,
+						"buffer_size": 2545,
 						"regions":
 						{
 						},
@@ -129,16 +169,13 @@
 						],
 						"settings":
 						{
-							"SL.14.region_keys":
-							[
-							],
 							"SL.15.region_keys":
 							[
 							],
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1223.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -232,7 +269,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 221.0,
+	"side_bar_width": 404.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

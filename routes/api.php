@@ -17,3 +17,15 @@ use Illuminate\Http\Request;
     return $request->user();
 });
 */
+
+// Products
+Route::resource('products', 'Product\ProductController', ['only' => ['index', 'store', 'update', 'destroy']]);
+
+// Orders
+Route::resource('orders', 'Order\OrderController', ['only' => ['index', 'store', 'update', 'destroy']]);
+
+// Order details
+Route::resource('order_details', 'Order_Detail\Order_DetailController', ['only' => ['index', 'store', 'update', 'destroy']]);
+
+// Users
+Route::resource('users', 'User\UserController', ['except' => ['create', 'edit']]);
