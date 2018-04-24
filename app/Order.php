@@ -9,8 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     protected $fillable = [
-    	//'total_price',
     	'user_id', //foreign
+        //'total',
     ];
 
     public function user()

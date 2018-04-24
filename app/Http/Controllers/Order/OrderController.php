@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Order;
 
 use App\Order;
+use App\Order_Detail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
 class OrderController extends Controller
@@ -40,6 +42,7 @@ class OrderController extends Controller
     {
         $rules = [
             'user_id' => 'required',
+            //'total' => 'required|numeric',
         ];
 
         $this->validate($request, $rules);
@@ -59,7 +62,19 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        $order = Order::findOrFail($id);
+
+        if ($order){
+            $order_details = Order_Detail::where('order_id', $id)->get();
+
+            $total = 0;
+
+            foreach ($order_details as $item){
+                $total += $item->price;
+            }
+
+            return response()->json(['data' => $order_details, 'total_price' => round($total, 2)], 200);
+        }
     }
 
     /**

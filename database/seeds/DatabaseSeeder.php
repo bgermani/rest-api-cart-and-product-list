@@ -41,6 +41,6 @@ class DatabaseSeeder extends Seeder
             ['title' => 'Bloodborne', 'price' => 5.99],
             ]);
     	
-        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
+        //DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }
