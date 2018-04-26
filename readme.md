@@ -1,6 +1,6 @@
-Uses Laravel Homestead 
+Used Laravel Homestead - db name "homestead" password "secret"
 
-Migrating and seeding will populate product DB with specified products
+Migrating/seeding will populate DB with specified products and dummy user to attach orders to
 
 Product API:
 
