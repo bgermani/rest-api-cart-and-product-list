@@ -56,16 +56,16 @@ class Order_DetailController extends Controller
 
         $product = Product::findOrFail($data['product_id']);
 
-        if (sizeof($orderlimit) < 3 && sizeof($productlimit) < 1){
-            //$data['price'] = $data['quantity'] * $data['price'];
+        if (sizeof($orderlimit) < 3 && sizeof($productlimit) < 1)
+        {
             $data['price'] = $data['quantity'] * $product->price;
 
             $order_detail = Order_Detail::create($data);
 
             return response()->json(['data' => $order_detail], 201);
-
-        } elseif (sizeof($orderlimit) < 3 && sizeof($productlimit) >= 1) {
-
+        } 
+        elseif (sizeof($orderlimit) < 3 && sizeof($productlimit) >= 1) 
+        {
             Order_Detail::where('product_id', $data['product_id'])->
                           where('order_id', $data['order_id'])->increment('quantity', $data['quantity']);
 
