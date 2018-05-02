@@ -4,22 +4,20 @@ Migrating/seeding will populate DB with specified products and dummy user to att
 
 Product API:
 
-GET /products
+GET /products - get list of products, 3 per page
 
-POST /products - title, price
+POST /products - add a product to list. body: title, price
 
-PUT /products/{product id}
+PUT /products/{product id} - change product. body: title or price
 
-DELETE /products/{product id}
-
+DELETE /products/{product id} - remove product
 
 Cart API:
 
-POST /orders - create a cart: user_id
+POST /orders - create a cart. body: user_id
 
 GET /orders/{order_id} - get all products in cart
 
-POST /order_details - add product to cart: order_id, product_id, quantity
+POST /order_details - add product to cart. body: order_id, product_id, quantity
 
 DELETE /order_details/{order_details id} - remove item from cart
-
