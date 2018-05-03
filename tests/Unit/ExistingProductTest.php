@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class ExistingProductTest extends TestCase
 {
     /**
-     * A basic test example.
+     * Test for repeat product title.
      *
      * @return void
      */
